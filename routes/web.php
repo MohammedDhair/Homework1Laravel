@@ -12,6 +12,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+           ////////////////// Laravel Routing /////////////////////////
+
+ 
 Route::get('userprofile1/{name?}' , function ($name = 'Ali'){
     return 'User name is:' . $name;
 })->name('login');
@@ -71,6 +74,13 @@ Route::middleware('throttle:3,1')->group(function(){
     });
         
 });
+
+
+                 ////////////////////// Laravel Migrations &&&&  Laravel Model //////////////////
+
+ 
+
+
 
 
 
